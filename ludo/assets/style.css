@@ -1,0 +1,82 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+#ludo{
+	position: relative;
+	padding:0px;
+	margin:0px;
+}
+#ludo_main_div{
+	background-color:black;
+}
+
+
+td{
+	border:1px solid black;
+	cursor:pointer;
+	overflow:hidden;
+}
+#b1, #b2, #b3, #b4, #b5, #a30{
+	background-color:blue;
+}
+#y1, #y2, #y3, #y4, #y5, #a17{
+	background-color:yellow;
+}
+#g1, #g2, #g3, #g4, #g5, #a4{
+	background-color:green;
+}
+#r1, #r2, #r3, #r4, #r5, #a43{
+	background-color:#10;
+}
+.divRed{
+	background-color:#8f0000;
+}
+.divYellow{
+	background-color:#8f8d00;
+}
+.divBlue{
+	background-color:#020157;
+}
+.divGreen{
+	background-color:#015702;
+}
+.pall{
+	position:absolute;
+	cursor:pointer;
+	left:0px;
+	top:0px;
+}
+.pr{
+	background-image: url("pr10.png");
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+	padding:0px;
+	margin:0px;
+}
+.pb{
+	background-image: url("pb10.png");
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+	padding:0px;
+	margin:0px;
+}
+.pg{
+	background-image: url("pg10.png");
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+	padding:0px;
+	margin:0px;
+}
+.py{
+	background-image: url("py10.png");
+	background-position: center;
+	background-size: contain;
+    background-repeat: no-repeat;
+	padding:0px;
+	margin:0px;
+}

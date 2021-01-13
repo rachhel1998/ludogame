@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+<title>ludo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<body>
+<div id="loader" style="position: fixed;width: 100%;height: 100vh;background: #000000 url('assets/loader.gif') no-repeat center;z-index: 999;"></div>
+<div class="col-md-12 mx-auto p-0 m-0 h-100">
+	<h1>Form</h1>
+	<hr/>
+	<form action="ludo.html" action="get">
+		<select name="players">
+			<option value="4">Player 4</option>
+			<option value="3">Player 3</option>
+			<option value="2">Player 2</option>
+		</select><br><br>
+		<input type="submit" value="Start The Game">
+	</form>
+	
+	
+	<hr/>
+	<h3>For Online PLay</h3>
+	<p>Create New Ludo id</p>
+	<form action="ludo.html" action="get">
+		<select name="players">
+			<option>Player 4</option>
+			<option>Player 3</option>
+			<option>Player 2</option>
+		</select><br><br>
+		<input type="text" name="createId" placeholder="Enter Anything To Create Ludo ID"><input type="button" value="Auto Generate Id"><br><br>
+		<input type="submit" value="Enter into Ludo">
+	</form>
+	<hr/>
+	<p>Join Existing Ludo</p>
+	<form action="ludo.html">
+		<input type="text" placeholder="To Join Enter ludo Id">
+		<input type="button" value="Join into Ludo">
+	</form>
+</div>
+<script>
+var preloader = document.getElementById('loader');
+function preLoaderHandler(){
+    preloader.style.display = 'none';
+}
+setTimeout(preLoaderHandler, 1500);
+</script>
+</body>
+</html>
