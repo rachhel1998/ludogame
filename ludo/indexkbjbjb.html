@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+<title>ludo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+	<script src="assets/test.js"></script>
+	<script src="assets/position_all_elements.js"></script>
+	<link href="assets/style.css" rel="stylesheet">
+<body style="background-color:black;">
+<div id="loader" style="position: fixed;width: 100%;height: 100vh;background: #000000 url('assets/loader.gif') no-repeat center;z-index: 999;"></div>
+<div class="col-md-6 mx-auto p-0 m-0 h-100" id="main_div">
+	<div id="top_div" class="col-12 text-center">
+		<span class="h2">Ludo.Ga</span>
+	</div>
+	<div class="col-12 p-0 d-flex justify-content-center align-items-center" id="ludo_main_div">
+		<div class="d-flex bg-light justify-content-center align-items-center" id="lodo_div">
+			
+			<div id="ludo_table">
+				<table border="1px" class="w-100 h-100 p-0 m-0">
+					<div id="pr1" class="pall pr"></div>
+					<div id="pr2" class="pall pr"></div>
+					<div id="pr3" class="pall pr"></div>
+					<div id="pr4" class="pall pr"></div>
+					
+					<div id="pg1" class="pall pg"></div>
+					<div id="pg2" class="pall pg"></div>
+					<div id="pg3" class="pall pg"></div>
+					<div id="pg4" class="pall pg"></div>
+					
+					<div id="pb1" class="pall pb"></div>
+					<div id="pb2" class="pall pb"></div>
+					<div id="pb3" class="pall pb"></div>
+					<div id="pb4" class="pall pb"></div>
+					
+					<div id="py1" class="pall py"></div>
+					<div id="py2" class="pall py"></div>
+					<div id="py3" class="pall py"></div>
+					<div id="py4" class="pall py"></div>
+					<tr>
+						<td class="divRed" id="divRed" colspan="6" rowspan="6">
+							
+							<div class="row m-0 p-0 h-100 w-100 divRed">
+								<div class="w-50 h-100">
+									<div class="col-12 h-50">
+										<div class="h-50 w-100 diceForAll" id="diceRed">
+										</div>
+									</div>
+									<div class="col-12 h-50"><!-- Red pointers --></div>
+								</div>
+							</div>
+						</td>
+						<td id="a1">1</td>
+						<td id="a2">2</td>
+						<td id="a3">3</td>
+						<td class="divGreen" id="divGreen" colspan="6" rowspan="6">
+							<div class="row m-0 p-0 h-100 w-100 divGreen">
+								<div class="row p-0 m-0 w-100 h-50">
+									<div class="w-50"><!-- Green pointers --></div>
+									<div class="w-50">
+										<div class="h-50 w-100 diceForAll" id="diceGreen">
+										</div>										
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<!--span--> <td id="a51">52</td><td id="g1">g1</td><td id="a4">4</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a51">51</td><td id="g2">g2</td><td id="a5">5</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a50">50</td><td id="g3">g3</td><td id="a6">6</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a49">49</td><td id="g4">g4</td><td id="a7">7</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a48">48</td><td id="g5">g5</td><td id="a8">8</td> <!--span-->
+					</tr>
+					<tr>
+						<td id="a42">42</td><td id="a43">43</td><td id="a44">44</td><td id="a45">45</td><td id="a46">46</td>
+						<td id="a47">47</td>
+						<td class="bg-secondary" colspan="3" rowspan="3">
+							<div class="h-100 w-100" id="centerDiv">
+								
+							</div>
+						</td>
+						<td id="a9">9</td><td id="a10">10</td><td id="a11">11</td><td id="a12">12</td><td id="a13">13</td><td id="a14">14</td>
+					</tr>
+					<tr>
+						<td id="a41">41</td><td id="r1">r1</td><td id="r2">r2</td><td id="r3">r3</td><td id="r4">r4</td>
+						<td id="r5">r5</td> <!--span--> <td id="y5">y5</td><td id="y4">y4</td><td id="y3">y3</td>
+						<td id="y2">y2</td><td id="y1">y1</td><td id="a15">15</td>
+					</tr>
+					<tr>
+						<td id="a40">40</td><td id="a39">39</td><td id="a38">38</td><td id="a37">37</td><td id="a36">36</td>
+						<td id="a35">35</td> <!--span--> <td id="a21">21</td><td id="a20">20</td><td id="a19">19</td>
+						<td id="a18">18</td><td id="a17">17</td><td id="a16">16</td>
+					</tr>
+					<tr>
+						<td class="divBlue" colspan="6" rowspan="6" id="divBlue">
+							<div class="row m-0 p-0 h-100 w-100 divBlue">
+								<div class="h-50 w-100"></div>
+								<div class="row m-0 p-0 w-100 h-50">
+									<div class="w-50">
+										<div class="h-50 w-100 diceForAll" id="diceBlue">
+										</div>
+									</div>
+									<div class="w-50"><!-- Blue pointers --></div>
+								</div>
+							</div>
+							
+						</td>
+						<td id="a34">34</td><td id="b5">b5</td><td id="a22">22</td>
+						<td class="divYellow" id="divYellow" colspan="6" rowspan="6">
+							<div class="row m-0 p-0 h-100 w-100 divYellow">
+								<div class="h-100 w-50"></div>
+								<div class="h-100 p-0 m-0 w-50">
+									<div class="h-50 w-100"><!-- Yellow pointers --></div>
+									<div class="h-50 w-100 diceForAll" id="diceYellow">
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<!--span--> <td id="a33">33</td><td id="b4">b4</td><td id="a23">23</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="b32">32</td><td id="b3">b3</td><td id="a24">24</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a31">31</td><td id="b2">b2</td><td id="a25">25</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a30">30</td><td id="b1">b1</td><td id="a26">26</td> <!--span-->
+					</tr>
+					<tr>
+						<!--span--> <td id="a29">29</td><td id="a28">28</td><td id="a27">27</td> <!--span-->
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+	</div>
+	<div id="btm_div" class="col-12 text-center">
+		<span class="h3">Ludo.Ga</span>
+	</div>
+</div>
+<script>
+function log(l){
+	console.log(l);
+}
+
+var preloader = document.getElementById('loader');
+function preLoaderHandler(){
+    preloader.style.display = 'none';
+	initialMove();
+}
+setTimeout(preLoaderHandler, 5000);
+
+</script>
+</body>
+</html>

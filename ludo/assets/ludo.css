@@ -1,0 +1,58 @@
+	body {
+	  background-color: linen;
+	}
+	#ludo_tamplate {
+		background-image:url('LudoTemplate.jpg');
+		background-size: contain;
+	}
+	.pall{
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		padding:0px;
+		margin:0px;
+		left:0px;
+		top:0px;
+		position:absolute;
+		cursor:pointer;
+	}
+	.pr{
+		background-image: url("pr10.png");
+	}
+	.pb{
+		background-image: url("pb10.png");
+	}
+	.pg{
+		background-image: url("pg10.png");
+	}
+	.py{
+		background-image: url("py10.png");
+	}	
+	.divP{
+		position:absolute;
+		padding:0px;
+		margin:0px;
+		background-color:gray;
+	}
+	.diceInLudo{
+		position:absolute;
+		padding:0px;
+		margin:0px;
+		left:0px;
+		top:0px;
+		#background-color:gray;
+		background-size: contain;
+	}
+	#diceForGreen{
+		background-image:url('d6.png');
+	}
+	#diceForYellow{
+		background-image:url('dice.gif');
+	}
+	#diceForBlue{
+		background-image:url('d5.png');
+	}
+	#diceForRed{
+		background-image:url('d4.png');
+	}
+	
